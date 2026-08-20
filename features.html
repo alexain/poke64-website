@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — POKE64</title>
+  <meta name="description" content="Explore POKE64 C64 emulation features for iPad, including VICE, REU, Dual SID, advanced drives, media library and native controls.">
+  <meta name="theme-color" content="#0d0c11">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Features — POKE64">
+  <meta property="og:description" content="Explore POKE64 C64 emulation features for iPad, including VICE, REU, Dual SID, advanced drives, media library and native controls.">
+  
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="features">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="POKE64 home">
+        <span class="brand-mark" aria-hidden="true">P64</span>
+        <span class="brand-word">POKE64</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation"><a href="index.html" data-nav="home">Home</a><a href="features.html" data-nav="features">Features</a><a href="support.html" data-nav="support">Support</a><a href="privacy.html" data-nav="privacy">Privacy</a></nav>
+    </div>
+  </header>
+
+  <main>
+<section class="page-hero"><div class="shell"><div class="kicker">Features</div><h1>A C64 emulator that exposes the machine.</h1><p>POKE64 is built around a full emulation workflow: media, drives, memory expansions, audio hardware and iPad-native controls all live in one coherent interface.</p></div></section>
+<div class="prose">
+  <h2>Core emulation</h2>
+  <p>POKE64 uses the VICE x64sc family as its C64 emulation foundation. The frontend is native to Apple platforms and is responsible for presentation, media management, settings and device integration.</p>
+  <ul>
+    <li>PAL/NTSC-oriented C64 emulation through VICE.</li>
+    <li>ReSID, ReSID-FP and FastSID engine choices where exposed by the bundled core.</li>
+    <li>Second SID address options for compatible 2SID software.</li>
+    <li>CRT cartridge attachment with VICE cartridge autodetection, including compatible Prophet64 CRT images.</li>
+  </ul>
+
+  <h2>Drives and storage</h2>
+  <p>Disk access can favor speed or hardware fidelity depending on the title.</p>
+  <ul>
+    <li><strong>Fast Virtual Drive:</strong> VICE device traps bypass the full serial-drive path when compatible.</li>
+    <li><strong>True Drive:</strong> full drive and IEC behavior, with optional Automatic or Maximum load acceleration.</li>
+    <li>Multiple IEC drive units, including units 8 through 11 in the current development line.</li>
+    <li>D64, D71, D81 and G64 support in the current public feature set.</li>
+  </ul>
+
+  <h2>Memory and peripherals</h2>
+  <ul>
+    <li>REU configurations up to 16 MB.</li>
+    <li>IEC printer workflow, including RAW output fallback when printer ROMs are unavailable.</li>
+    <li>Virtual modem support for compatible software and user-selected network destinations.</li>
+    <li>Mouse support and modern controller input.</li>
+  </ul>
+
+  <h2>iPad experience</h2>
+  <ul>
+    <li>Native media library rather than emulator-style filesystem navigation.</li>
+    <li>On-screen C64 keyboard and input controls.</li>
+    <li>Responsive portrait and landscape layouts.</li>
+    <li>Peripheral status panels kept visible around the emulation canvas.</li>
+    <li>Save-state and profile workflows designed around individual titles and machine configurations.</li>
+  </ul>
+
+  <div class="notice"><strong>Not bundled:</strong> copyrighted Commodore ROMs, proprietary peripheral firmware and commercial software images must be supplied by the user where legally permitted.</div>
+</div>
+</main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div><strong>POKE64</strong><br><span class="muted">A native Commodore 64 emulator experience for iPad.</span></div>
+        <div class="footer-links">
+          <a href="features.html">Features</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="credits.html">Credits</a>
+          <a href="#" data-site-link="github">GitHub</a>
+        </div>
+      </div>
+      <p class="legal">POKE64 is an independent project and is not affiliated with Commodore. Commodore 64, C64 and other product names or marks belong to their respective owners. ROMs, firmware and commercial software are not distributed with POKE64.</p>
+      <p>© <span data-current-year></span> POKE64.</p>
+    </div>
+  </footer>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
