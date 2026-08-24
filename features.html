@@ -35,6 +35,7 @@
     <li>ReSID, ReSID-FP and FastSID engine choices where exposed by the bundled core.</li>
     <li>Second SID address options for compatible 2SID software.</li>
     <li>CRT cartridge attachment with VICE cartridge autodetection, including compatible Prophet64 CRT images.</li>
+    <li>Metal CRT rendering with configurable scanlines, mask styles, curvature, bloom and reusable presets.</li>
   </ul>
 
   <h2>Drives and storage</h2>
@@ -43,7 +44,9 @@
     <li><strong>Fast Virtual Drive:</strong> VICE device traps bypass the full serial-drive path when compatible.</li>
     <li><strong>True Drive:</strong> full drive and IEC behavior, with optional Automatic or Maximum load acceleration.</li>
     <li>Multiple IEC drive units, including units 8 through 11 in the current development line.</li>
-    <li>D64, D71, D81 and G64 support in the current public feature set.</li>
+    <li>D64, D71, D81 and G64 support, including extended-track/raw-GCR recognition.</li>
+    <li>G64 Disk Structure inspection with best-effort CBM DOS sector-header decoding while preserving non-standard/protected raw-track visibility.</li>
+    <li>Conservative Safe Start handling for protected G64 media when normal VICE autostart would disturb the disk/drive state.</li>
   </ul>
 
   <h2>Memory and peripherals</h2>
@@ -51,16 +54,20 @@
     <li>REU configurations up to 16 MB.</li>
     <li>IEC printer workflow, including RAW output fallback when printer ROMs are unavailable.</li>
     <li>Virtual modem support for compatible software and user-selected network destinations.</li>
-    <li>Mouse support and modern controller input.</li>
+    <li>Commodore 1351 mouse support and modern controller input.</li>
+    <li>Virtual Paddles with independent analog controls and Fire buttons.</li>
+    <li>KoalaPad control surface with touch, Apple Pencil and live sensitivity adjustment.</li>
   </ul>
 
   <h2>iPad experience</h2>
   <ul>
     <li>Native media library rather than emulator-style filesystem navigation.</li>
-    <li>On-screen C64 keyboard and input controls.</li>
+    <li>On-screen C64 keyboard, simultaneous joystick + keyboard input, configurable keyboard joystick mappings and Quick Keys.</li>
+    <li>Overlay or Docked touch controls with configurable side and size.</li>
     <li>Responsive portrait and landscape layouts.</li>
     <li>Peripheral status panels kept visible around the emulation canvas.</li>
-    <li>Save-state and profile workflows designed around individual titles and machine configurations.</li>
+    <li>Emulation Profiles with per-title Library assignment and selective per-title input overrides.</li>
+    <li>Automatic Previous Session restore for normal background/cold-launch continuity.</li>
   </ul>
 
   <div class="notice"><strong>Not bundled:</strong> copyrighted Commodore ROMs, proprietary peripheral firmware and commercial software images must be supplied by the user where legally permitted.</div>
