@@ -229,7 +229,7 @@ h2 { font-size: clamp(34px, 5vw, 56px); }
 .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 .muted { color: var(--muted); }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .hero { padding-top: 64px; }
   .hero-grid, .split { grid-template-columns: 1fr; }
   .hero-grid { gap: 36px; }
@@ -261,21 +261,53 @@ h2 { font-size: clamp(34px, 5vw, 56px); }
 }
 
 /* Real POKE64 screenshots and release information */
-.hero-shot { position: relative; z-index: 1; margin: 0; width: 100%; }
-.hero-shot img { width: 100%; height: auto; border-radius: 19px; border: 1px solid rgba(255,255,255,.13); box-shadow: var(--shadow); }
+.hero-shot {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  width: 100%;
+  max-width: 760px;
+}
+.hero-shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 19px;
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: var(--shadow);
+}
 .hero-shot figcaption { color: var(--muted); font-size: 12px; text-align: center; margin-top: 13px; }
 .showcase { background: rgba(255,255,255,.012); }
 .showcase-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 19px; }
-.showcase-item { margin: 0; min-width: 0; overflow: hidden; background: var(--panel); border: 1px solid var(--line); border-radius: 20px; }
+.showcase-item {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
 .showcase-wide { grid-column: 1 / -1; }
-.showcase-item img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; object-position: center; background: #08070b; }
-.showcase-wide img { max-height: 560px; object-fit: contain; }
+.showcase-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #08070b;
+}
+.showcase-wide img {
+  max-height: none;
+}
 .showcase-item figcaption { padding: 18px 21px 22px; display: flex; flex-direction: column; gap: 4px; }
 .showcase-item figcaption strong { font-size: 17px; }
 .showcase-item figcaption span { color: var(--muted); font-size: 14px; }
 .release-status { font-size: 13px; }
-@media (max-width: 620px) {
+@media (max-width: 860px) {
   .showcase-grid { grid-template-columns: 1fr; }
   .showcase-wide { grid-column: auto; }
+}
+@media (max-width: 620px) {
   .hero-shot img { border-radius: 12px; }
 }
