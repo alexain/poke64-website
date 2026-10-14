@@ -66,3 +66,10 @@ python3 -m http.server 8080
 ```
 
 Then open `http://localhost:8080/`.
+
+
+## Website update (October 2026)
+
+The homepage now shows authentic POKE64 screenshots in `assets/screenshots/`,
+links to the official App Store listing, and includes an update summary for 1.0.2.
+The text currently identifies 1.0.2 as pending Apple approval; update it after approval.

@@ -1,8 +1,10 @@
-# Before publishing the POKE64 website
+# Before publishing POKE64 website
 
-1. Set the final App Store URL in `assets/js/config.js` when available.
-2. Add a dedicated support email (recommended before using the site as the App Store Support URL).
-3. Replace the CSS-only iPad hero mockup with approved POKE64 screenshots when available.
-4. Review `privacy.html` against the exact shipping binary and App Store Connect App Privacy answers.
-5. If using a custom domain, add a `CNAME` file containing only that hostname.
-6. Update the `TestFlight beta · 0.8.2` badge when the public release version changes.
+- [x] Configure the official App Store URL.
+- [x] Replace the placeholder C64 hero with the provided real `main.png` screenshot.
+- [x] Add real screenshot gallery.
+- [x] Remove outdated TestFlight beta messaging.
+- [ ] When Apple approves 1.0.2, update the review-pending messaging to "Available now" and verify the App Store compatibility listing.
+- [ ] Add a dedicated support email if desired.
+- [ ] Review `privacy.html` against the shipping binary and App Store Connect privacy disclosures.
+- [ ] If using a custom domain, configure `CNAME`.
